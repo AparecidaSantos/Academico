@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academico</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<table border=1> 
+		<tr>
+			<td>	<%= link_to 'Alunos', alunos_path %> </td>
+			<td>		<%= %> </td>
+			<td>		<%=  %></td>
+		</tr>
+		<tr> 
+			<td colspan=3>
+				<%= yield %> 
+			</td>
+		</tr>
+	</table> 
+</body>
+</html>
