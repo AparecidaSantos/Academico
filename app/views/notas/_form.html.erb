@@ -2,8 +2,8 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.association :aluno %>
-    <%= f.association :disciplina %>
+    <%= f.association :aluno,  label_method: :nome %>
+    <%= f.association :disciplina,  label_method: :nome %>
     <%= f.input :p1 %>
     <%= f.input :p2 %>
     <%= f.input :p3 %>
